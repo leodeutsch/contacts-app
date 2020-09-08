@@ -1,18 +1,21 @@
 import React from 'react';
-import { View, ScrollView, Text } from 'react-native';
-import styles from './style';
-import Header from '../../components/Header';
-import ContactItem from '../../components/ContactItem';
+import { View, ScrollView } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { FontAwesome5 } from '@expo/vector-icons';
 
+import Header from '../../components/Header';
+import ContactItem from '../../components/ContactItem';
+
+import styles from './style';
+
 function HomeList(){
+
     return(
         <View style={styles.container}>
             <Header title="Contatos" />
 
             <ScrollView>
-                <ContactItem nome="Gustavo" />
+                <ContactItem nome="Gustavo"  />
 
                 <ContactItem nome="Alice" />
                 <ContactItem nome="Claudia" />
