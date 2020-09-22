@@ -11,18 +11,25 @@ const styles = StyleSheet.create({
         backgroundColor: '#b48090'
     },
     image:{
-        width: 48,
-        height: 48,
+        width: 52,
+        height: 52,
         borderRadius: 32,
         backgroundColor: '#eee',
         marginHorizontal: 20
     },
 
-    text: {
+    textName: {
         marginLeft: 10,
         fontFamily: 'Ubuntu_400Regular',
         fontSize: 18,
-        color: '#FAFAFA'
+        color: '#FAFAFA',
+        paddingBottom: '2%',
+    },
+    textNumber: {
+        marginLeft: 10,
+        fontFamily: 'Ubuntu_300Light_Italic',
+        fontSize: 12,
+        color: '#FAFAFC',
     }
 });
 

@@ -5,7 +5,7 @@ import styles from './style';
 
 interface ButtonIconProps{
     name: string;
-    text: string
+    text: string;
 }
 
 const ButtonIcon: React.FC<ButtonIconProps> = ({name, text}) => {

@@ -1,25 +1,33 @@
 import React from 'react';
-import { Image, Text, TouchableOpacity } from 'react-native';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
 import styles from './style';
 import { useNavigation } from '@react-navigation/native';
 
-interface ContactProps{
-    avatar?: string;
-    nome: string;
+interface Contact{
+    item: ContactProps;
 }
 
-const ContactItem: React.FC<ContactProps> = ({avatar, nome}) =>{
+export interface ContactProps{
+    avatar?: string;
+    name: string;
+    number?: string;
+}
 
-    const {navigate} = useNavigation();
+const ContactItem: React.FC<Contact> = ({item}) =>{
+
+    const navigation = useNavigation();
 
     function handleToDetails(){
-        navigate('HomeDetails');
+        navigation.navigate('HomeDetails', {avatar: item.avatar, name: item.name});
     }
     
     return(
         <TouchableOpacity style={styles.container} activeOpacity={0.8} onPress={handleToDetails}>
-            <Image style={styles.image} source={{uri: avatar}}/> 
-            <Text style={styles.text}>{nome}</Text>
+            <Image style={styles.image} source={{uri: item.avatar}}/> 
+            <View>
+                <Text style={styles.textName}>{item.name}</Text>
+                <Text style={styles.textNumber}>{item.number}</Text>
+            </View>
         </TouchableOpacity>
     );
 }
