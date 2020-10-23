@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#b48090'
     },
     image:{
-        width: 52,
-        height: 52,
+        width: 58,
+        height: 58,
         borderRadius: 32,
         backgroundColor: '#eee',
         marginHorizontal: 20
@@ -21,14 +21,14 @@ const styles = StyleSheet.create({
     textName: {
         marginLeft: 10,
         fontFamily: 'Ubuntu_400Regular',
-        fontSize: 18,
+        fontSize: 20,
         color: '#FAFAFA',
         paddingBottom: '2%',
     },
     textNumber: {
         marginLeft: 10,
         fontFamily: 'Ubuntu_300Light_Italic',
-        fontSize: 12,
+        fontSize: 14,
         color: '#FAFAFC',
     }
 });

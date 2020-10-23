@@ -14,15 +14,20 @@ const styles = StyleSheet.create({
     },
 
     image:{
-        width: '100%',
-        height: '85%'
+        width: 150,
+        height: 150,
+        resizeMode: "contain",
+        borderRadius: 20,
+        alignSelf:"center",
+        marginBottom: 5
     },
 
     textBox1:{
         fontSize: 24,
         fontFamily: 'Ubuntu_400Regular',
         marginBottom: 10,
-        marginHorizontal: 10
+        marginHorizontal: 10,
+        textAlign: "center"
     },
 
     mainBox2:{

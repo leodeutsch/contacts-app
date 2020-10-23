@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { FontAwesome5, MaterialIcons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 
 import Header from '../../components/Header';
 import ButtonIcon from '../../components/ButtonIcon';
@@ -10,9 +10,18 @@ import LineInfo from '../../components/LineInfo';
 
 import styles from './style';
 
-function HomeDetails(){
+interface HomeRouteParams{
+    avatar: string;
+    name: string;
+    number: string;
+    email: string;
+}
 
+function HomeDetails(){
+    const route = useRoute();
     const {navigate} = useNavigation();
+
+    const params = route.params as HomeRouteParams;
 
     function handleToBack(){
         navigate('HomeList');
@@ -28,8 +37,8 @@ function HomeDetails(){
 
             <View style={styles.main}>
                 <View style={styles.mainBox1}>
-                    <Image style={styles.image}/>
-                    <Text style={styles.textBox1}>Nome do Contato</Text>
+                    <Image style={styles.image} source={{uri: params.avatar}}/>
+                    <Text style={styles.textBox1}>{params.name}</Text>
                 </View>
                 <View style={styles.mainBox2}>
                     <ButtonIcon name="call" text="Call"/>
@@ -39,8 +48,8 @@ function HomeDetails(){
                 </View>
 
                 <View style={styles.mainBox3}>
-                    <LineInfo icon="call" text="(71) 98000-4000 " />
-                    <LineInfo icon="email" text="teste@gmail.com " />
+                    <LineInfo icon="call" text={params.number} />
+                    <LineInfo icon="email" text={params.email} />
                 </View>
             </View>
 

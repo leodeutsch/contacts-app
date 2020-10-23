@@ -6,9 +6,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#7D3F53',
         height: 80,
-        borderBottomRightRadius: 40,
-        borderBottomLeftRadius: 40,
-        marginBottom: '1%',
+        borderBottomRightRadius: 30,
+        borderBottomLeftRadius: 30,
+        marginBottom: 5,
         flexDirection: "row"
     },
     text:{

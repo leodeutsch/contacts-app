@@ -1,0 +1,124 @@
+{
+    "dados": [
+        {
+            "id": "01",
+            "name": "Bruno Kurt",
+            "avatar": "https://randomuser.me/api/portraits/men/91.jpg",
+            "number": "(55) 98252-6432",
+            "email": "brunokurt@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "02",
+            "name": "Alexandria Silva",
+            "avatar": "https://randomuser.me/api/portraits/women/27.jpg",
+            "number": "(11) 98888-1158",
+            "email": "alexandriasilva@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "03",
+            "name": "Karine Mioto",
+            "avatar": "https://randomuser.me/api/portraits/women/10.jpg",
+            "number": "(79) 99852-2498",
+            "email": "karinemioto@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "04",
+            "name": "Weller Brow",
+            "avatar": "https://randomuser.me/api/portraits/women/22.jpg",
+            "number": "(48) 92518-6883",
+            "email": "wellerbrow@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "05",
+            "name": "Laís Lorena Ayla",
+            "avatar": "https://randomuser.me/api/portraits/women/25.jpg",
+            "number": "(71) 92518-6883",
+            "email": "laisayala@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "06",
+            "name": "Kevin Yago",
+            "avatar": "https://randomuser.me/api/portraits/men/2.jpg",
+            "number": "(71) 92518-6883",
+            "email": "kevin-yago@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "07",
+            "name": "Antônio Henrique",
+            "avatar": "https://randomuser.me/api/portraits/men/29.jpg",
+            "number": "(71) 92518-6883",
+            "email": "henrique.aoc@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "08",
+            "name": "Felipe Tiago",
+            "avatar": "https://randomuser.me/api/portraits/men/14.jpg",
+            "number": "(71) 92518-6883",
+            "email": "felipetiagoo@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "09",
+            "name": "Catarina Beatriz",
+            "avatar": "https://randomuser.me/api/portraits/women/90.jpg",
+            "number": "(71) 92518-6883",
+            "email": "carinabeatriz@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "10",
+            "name": "Carolina Raquel",
+            "avatar": "https://randomuser.me/api/portraits/women/35.jpg",
+            "number": "(71) 92518-6883",
+            "email": "carolinaraquel@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "11",
+            "name": "Thales Ryan",
+            "avatar": "https://randomuser.me/api/portraits/men/13.jpg",
+            "number": "(71) 92518-6883",
+            "email": "thalles.ryan@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "12",
+            "name": "Weller Brow",
+            "avatar": "https://randomuser.me/api/portraits/men/48.jpg",
+            "number": "(71) 92518-6883",
+            "email": "brow238@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "13",
+            "name": "Raimundo Calebe",
+            "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+            "number": "(71) 92518-6883",
+            "email": "calebe2000@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "14",
+            "name": "Vanessa Silveira",
+            "avatar": "https://randomuser.me/api/portraits/women/2.jpg",
+            "number": "(71) 92518-6883",
+            "email": "nessasilveira@gmail.com",
+            "address": ""
+        },
+        {
+            "id": "15",
+            "name": "Ruan Victor",
+            "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
+            "number": "(71) 92518-6883",
+            "email": "ruan-victor@gmail.com",
+            "address": ""
+        }
+    ]
+}
