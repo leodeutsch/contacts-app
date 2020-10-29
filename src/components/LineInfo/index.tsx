@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { View, Text } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
+import styles from './styles';
 
 interface LineInfoProps{
     icon: string;
@@ -10,9 +11,9 @@ interface LineInfoProps{
 
 const LineInfo: React.FC<LineInfoProps> = ({icon, text, right}) => {
     return(
-        <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginVertical: 10, borderBottomWidth: 0.8, marginHorizontal: 10, paddingBottom: 5}}>
+        <View style={styles.container}>
             <MaterialIcons name={icon} size={28} color="#020202" /> 
-            <Text style={{fontSize: 18, marginLeft: 15}}>{text}</Text>
+            <Text style={styles.text}>{text}</Text>
             {right}
         </View>
     );

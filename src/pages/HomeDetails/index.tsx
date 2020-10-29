@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, Modal } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { FontAwesome5, MaterialIcons } from '@expo/vector-icons';
 import { useNavigation, useRoute } from '@react-navigation/native';
@@ -9,12 +9,14 @@ import ButtonIcon from '../../components/ButtonIcon';
 import LineInfo from '../../components/LineInfo';
 
 import styles from './style';
+import { Alert } from 'react-native';
 
 interface HomeRouteParams{
     avatar: string;
     name: string;
     number: string;
     email: string;
+    address: string;
 }
 
 function HomeDetails(){
@@ -25,6 +27,10 @@ function HomeDetails(){
 
     function handleToBack(){
         navigate('HomeList');
+    }
+
+    function handlePage404(){
+        Alert.alert("Info", "Ops que pena! Funcionalidade ainda não criada")
     }
 
     return(
@@ -50,13 +56,15 @@ function HomeDetails(){
                 <View style={styles.mainBox3}>
                     <LineInfo icon="call" text={params.number} />
                     <LineInfo icon="email" text={params.email} />
+                    <LineInfo icon="location-on" text={params.address} />
                 </View>
             </View>
 
-            <RectButton style={styles.button}>
+            <RectButton style={styles.button} onPress={handlePage404}>
                 <MaterialIcons name="edit" size={24} color="#FAFAFA"/>
                 <Text style={styles.textButton}>Edit Contact</Text>
             </RectButton>
+
         </View>
     );
 }

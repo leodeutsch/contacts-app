@@ -12,6 +12,7 @@ export interface ContactProps{
     name: string;
     number?: string;
     email?:string;
+    address?:string;
 }
 
 const ContactItem: React.FC<Contact> = ({item}) =>{
@@ -19,7 +20,7 @@ const ContactItem: React.FC<Contact> = ({item}) =>{
     const navigation = useNavigation();
 
     function handleToDetails(){
-        navigation.navigate('HomeDetails', {avatar: item.avatar, name: item.name, number: item.number, email: item.email});
+        navigation.navigate('HomeDetails', {avatar: item.avatar, name: item.name, number: item.number, email: item.email, address: item.address});
     }
     
     return(

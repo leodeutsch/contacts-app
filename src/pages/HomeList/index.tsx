@@ -15,8 +15,8 @@ function HomeList(){
     useEffect(() => {
         
         async function loading(){
-            const result =  await api.get('/dados');
-            console.log(result);
+            const result =  await api.get('/contacts');
+            console.log(result.data);
             setDados(result.data);
         }
 
@@ -34,8 +34,8 @@ function HomeList(){
             ) : (
                 <FlatList
                     data={dados}
-                    renderItem={({item, index}) => <ContactItem item={item} />}
-                    keyExtractor={index => index}
+                    renderItem={({item}) => <ContactItem item={item} />}
+                    keyExtractor={(item, index) => index}
                 />
             )}
             
