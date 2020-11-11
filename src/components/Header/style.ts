@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: 'center',
         backgroundColor: '#7D3F53',
-        height: 80,
+        height: 100,
         borderBottomRightRadius: 30,
         borderBottomLeftRadius: 30,
         marginBottom: 5,
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     text:{
         fontSize: 30,
         color: '#FCFCFC',
-        marginTop: 10,
+        marginTop: 45,
         fontFamily: 'Ubuntu_700Bold'
     },
 });

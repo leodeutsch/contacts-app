@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {MaterialIcons} from '@expo/vector-icons';
 import AppStack from './AppStack';
-
+import BitcoinStack from './BitcoinStack';
 const Tab = createBottomTabNavigator();
 
 export default function AppTab(){
@@ -13,7 +13,7 @@ export default function AppTab(){
                 style: {
                     elevation: 0,
                     shadowOpacity: 0,
-                    height: 64,
+                    height: 75,
                     
                 },
                 tabStyle:{
@@ -48,8 +48,8 @@ export default function AppTab(){
                     }}
                 />
                 <Tab.Screen 
-                    name="Teste" 
-                    component={AppStack}
+                    name="BitcoinStack" 
+                    component={BitcoinStack}
                     options={{
                         tabBarLabel: 'Felipe',
                         tabBarIcon: () => {
