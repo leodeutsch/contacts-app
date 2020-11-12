@@ -36,8 +36,8 @@ function HomeDetails(){
     return(
         <View style={styles.container}>
             <Header title="Detalhes" left={(
-                <RectButton style={{position: 'absolute', left: 25, top: 35}} onPress={handleToBack}>
-                    <FontAwesome5 name="arrow-left" size={24} color="#FFF" />
+                <RectButton style={{position: 'absolute', left: 25, top: 50}} onPress={handleToBack}>
+                    <FontAwesome5 name="arrow-left" size={28} color="#FFF" />
                 </RectButton>
             )}/>
 

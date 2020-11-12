@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     text:{
         fontSize: 30,
         color: '#FCFCFC',
-        marginTop: 45,
+        marginTop: 30,
         fontFamily: 'Ubuntu_700Bold'
     },
 });
