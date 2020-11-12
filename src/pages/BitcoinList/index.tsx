@@ -5,10 +5,11 @@ import ContactItem from '../../components/ContactItem';
 import styles from './styles';
 import api from '../../services/api';
 import { useNavigation } from '@react-navigation/native';
+import QRCode from 'react-native-qrcode-generator';
 
 interface BitcoinItemProps {
   name: string;
-  bitcoinAdress: string;
+  bitcoinAddress: string;
 }
 
 interface BitCointProps {
@@ -27,7 +28,6 @@ function BitcoinList(){
     }
     loading();
   },[]);
-
   return(
     <View style={styles.container}>
       <Header title="Bitcoin Wallets" />
@@ -51,17 +51,21 @@ export default BitcoinList;
 const BitcoinItem: React.FC<BitCointProps> = ({ item }) =>{
 
   const navigation = useNavigation();
-
   function handleToDetails(){
-      navigation.navigate('HomeDetails', {name: item.name, walletAddress: item.bitcoinAdress});
+      navigation.navigate('WalletDetails', {name: item.name, bitcoinAddress: item.bitcoinAddress});
   }
   
   return(
       <TouchableOpacity style={styles.containerItem} activeOpacity={0.8} onPress={handleToDetails}>
           {/* <Image style={styles.image} source={{uri: item.avatar}}/>  */}
+          <QRCode
+          value={item.bitcoinAddress}
+          size={50}
+          bgColor='black'
+          fgColor='white'/>
           <View>
               <Text style={styles.textName}>{item.name}</Text>
-              <Text style={styles.textNumber}>{item.bitcoinAdress}</Text>
+              <Text style={styles.textNumber}>{item.bitcoinAddress}</Text>
           </View>
       </TouchableOpacity>
   );
